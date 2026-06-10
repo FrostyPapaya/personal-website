@@ -1,0 +1,21 @@
+How to cannibalize properly:
+Pick one feature at a time  
+e.g., “I want a sidebar”, “I want a pixel-art cursor”, “I want a grid layout”.
+
+Find 2–3 examples  
+Compare how different people solved it.
+
+Extract the smallest possible snippet  
+Don’t copy the whole stylesheet — just the relevant 10–20 lines.
+
+Rewrite it in your own naming style  
+Change class names, reorganise the HTML.
+
+Add one improvement  
+A colour change, a transition, a spacing tweak — anything.
+
+next steps -> from the note from 01/06/26
+    XXX>make a style-sheet for CSS and JS
+    XXX >make the sadgrl background-background thing
+    XXX >make your page within a single rectangle (div?) like the template
+    >make the static pages for the other links, which will be like your hobbies birdwatching, art, etc etc

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body >
+
+<div class = "cursor-blob"> </div>
+    <div id = "container"> <div id="header"></div> 
+<div id="headerArea">
+                
+                
+            <nav id="navbar"><ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../R data/JHU-genomic-data-science.html">Workspace Link</a></li>
+                <li><a href="linked-pages/hobbies.html">My Hobbies!</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul></nav></div>
+
+            <div id="flex">
+                <aside id="leftSidebar">
+                    <h2>Updates</h2>
+                    <div class="box">
+                        <p>I have recently updated this tool as of August 2022!</p>
+                        <ul style="padding-left:10px;">
+                            <li>Rewrote the JS to generate cleaner code</li>
+                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
+                            <li>Added a couple of new features!</li>
+                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
+                        </ul>
+                    </div>
+                    <h2>Hi there!</h2>
+                    <h3>Other Tools</h3>
+                    <ul>
+                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
+                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
+                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
+                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
+                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
+                    </ul>
+                </aside>
+                <main>
+                    <div class="box"> 
+                    <h1>Welcome to Aria's website</h1>
+                    <p><strong>Made by Aria</strong></p>
+                    </div>
+                    
+                   
+                    <p> - Cat Ipsum - </p>
+                    <p>Rub my belly hiss swipe at owner's legs sniff catnip and act crazy growl at dogs in my sleep sit on the laptop for hiss at vacuum cleaner i like to spend my days sleeping and eating fishes that my human fished for me.</p>
+
+                    <p>Head nudges eat my own ears. Hey! you there, with the hands why can't i catch that stupid red dot, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff, or roll over and sun my belly curl up and sleep on the freshly laundered towels.</p>
+
+
+                </main>
+                
+            </div>
+            
+        <footer id="footer"></footer></div>
+    </div>
+
+
+</body>
+
+
+<script>
+window.onload = function () {
+    const blob = document.querySelector(".cursor-blob");
+
+    let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+    let blobX = mouseX, blobY = mouseY;
+
+    document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function followCursor() {
+        blobX += (mouseX - blobX) * 0.4;  // Slower delay for smoother effect
+        blobY += (mouseY - blobY) * 0.4;
+
+        blob.style.left = `${blobX - 100}px`;
+        blob.style.top = `${blobY - 100}px`;
+
+        requestAnimationFrame(followCursor);
+    }
+
+    followCursor();
+};
+</script>
+
+
+</html>

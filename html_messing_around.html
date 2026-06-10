@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "images/jellyfish_ink.jpg"
+  } else {
+    pic = "images/IsabelleAriaAnita.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<style>
+  
+  .note {
+  font-size: 120%;
+  color: red;
+  padding: 10px;
+  border: 4px solid rgb(0, 0, 0);
+}
+table, th, td {
+  border:1px solid black;
+}
+p {
+  border: 2px solid powderblue;
+}
+.testbtn {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.testbtn:hover {
+  background-color: #059862;
+}
+
+   @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+</style>
+<head>
+<title  >Aria Luna-Terra Olivia</title>
+<h1 style="text-align:center;">Aria Luna-Terra Olivia</h1>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body style="background-color:rgb(177, 241, 222);">
+
+
+        <div id="container"><div id="header"></div>
+            <div id="headerArea">
+                
+                
+            <nav id="navbar"><ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul></nav></div>
+              <style>
+                :root {
+                --header-image: url(images/IsabelleAriaAnita.png);
+                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+
+                /* colors */
+                --content: #43256E;
+            }
+             #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                height: 375px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+              #navbar {
+                height: 40px;
+                background-color: #13092D;
+                /* navbar color */
+                width: 100%;
+            }
+             #navbar {
+                height: 40px;
+                background-color: #13092D;
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #4dfae3;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+              </style>
+
+  <h1 style="color:rgb(255, 255, 255); background-color:rgb(0, 0, 0);">This is a heading</h1>
+<p style="background-color:tomato;" > My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+<h1 style="font-family:verdana;">This is a big heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<p style="color:red;">My first paragraph.</p>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<p style="color:red;" >This is a <br> paragraph with a line break.</p>
+<img src="images/jellyfish_ink.jpg" width="300">
+<pre >
+  My chud lies over the ocean.
+
+  My chud lies over the sea.
+
+  My chud lies over the ocean.
+
+  Oh, bring back my chud to me.
+</pre>
+<p>Default button with no styling:</p>
+<button>Click me</button>
+
+<p>Styled button:</p>
+<button class="testbtn" onclick="alert('Gay!')" >Green Button</button>
+
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+  
+  <ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+</div>
+<div style="background-color:#D9EEE1;" class="note">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has over 4 million inhabitants.</p>
+</div>
+
+<table style="width:100%" >
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+
+
+<img id="myImage" src="jellyfish_ink.jpg" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Chefs</button>
+<button type="button" onclick="light(0)">Jellyfish girl</button>
+</p>
+
+
+</body>
+</html>
+<!---
+CSS types: 
+Inline - by using the style attribute inside HTML elements. style = ...
+#Internal - by using a <style> element in the <head> section. defined at the head
+#External - by using a <link> element to link to an external CSS fil 
+^ stylesheet. on <head><link rel="stylesheet" href="styles.css"> </head>
+
+classes can also be pretty useful 
+-->
